@@ -25,7 +25,10 @@ h1 {
 }
 
 main {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 16px;
+  box-sizing: border-box;
 }
 
 section {
@@ -120,6 +123,32 @@ a:hover {
 }
 
 .article img {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  #featured-article h2 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    margin: 8px 0;
+    line-height: 1.5;
+  }
 }
